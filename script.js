@@ -2,25 +2,25 @@ var movies = [
 	{
 		id: 1,
 		title: 'Harry Ploter',
-		decs: 'Film o drukarce',
+		desc: 'Film o drukarce',
 		photo: 'https://thumb9.shutterstock.com/display_pic_with_logo/2704957/612136502/stock-photo-large-printer-format-inkjet-working-612136502.jpg'
 	},
 	{
 		id: 2,
 		title: 'Król kur',
-		decs: 'Film o kurniku',
+		desc: 'Film o kurniku',
 		photo: 'https://cdn.stocksnap.io/img-thumbs/280h/1HSL6PSND8.jpg'
 	},
 	{
 		id: 3,
 		title: 'Karate kit',
-		decs: 'Film o kitowaniu',
+		desc: 'Film o kitowaniu',
 		photo: 'https://image.shutterstock.com/display_pic_with_logo/1268695/508681516/stock-photo-hand-with-putty-knife-repair-damaged-wall-508681516.jpg'
 	},
 	{
 		id: 4,
 		title: 'James błąd',
-		decs: 'Film o tym, jak nie popełniać błędów',
+		desc: 'Film o tym, jak popełniać mniej błędów',
 		photo: 'https://image.shutterstock.com/display_pic_with_logo/160669/276168278/stock-photo-desperate-employee-276168278.jpg'
 	}
 ];
@@ -28,7 +28,7 @@ var movies = [
 var moviesElements = movies.map(function(movie){
 	return React.createElement('li', {key: movie.id},
 		React.createElement('h2', {}, movie.title),
-		React.createElement('p', {}, movie.decs),
+		React.createElement('p', {}, movie.desc),
 		React.createElement('img', {src: movie.photo})
 	);
 });
